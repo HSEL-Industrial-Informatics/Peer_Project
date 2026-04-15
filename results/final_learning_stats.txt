@@ -1,0 +1,30 @@
+Final OPC UA Learning Results
+========================================
+
+Algorithm : L* (Angluin 1987)
+Library   : AALpy
+Alphabet  : ['CONNECT', 'DISCONNECT', 'READ', 'WRITE', 'BROWSE', 'CREATE_SUB', 'DELETE_SUB']
+States    : 3
+
+Transitions:
+  s0 --CONNECT/CONNECT_OK--> s1
+  s0 --DISCONNECT/NOT_CONNECTED--> s0
+  s0 --READ/NOT_CONNECTED--> s0
+  s0 --WRITE/NOT_CONNECTED--> s0
+  s0 --BROWSE/NOT_CONNECTED--> s0
+  s0 --CREATE_SUB/NOT_CONNECTED--> s0
+  s0 --DELETE_SUB/NOT_CONNECTED--> s0
+  s1 --CONNECT/ALREADY_CONNECTED--> s1
+  s1 --DISCONNECT/DISCONNECT_OK--> s0
+  s1 --READ/READ_OK--> s1
+  s1 --WRITE/WRITE_REJECTED--> s1
+  s1 --BROWSE/BROWSE_OK--> s1
+  s1 --CREATE_SUB/CREATE_SUB_OK--> s2
+  s1 --DELETE_SUB/NO_SUB--> s1
+  s2 --CONNECT/ALREADY_CONNECTED--> s2
+  s2 --DISCONNECT/DISCONNECT_OK--> s0
+  s2 --READ/READ_OK--> s2
+  s2 --WRITE/WRITE_REJECTED--> s2
+  s2 --BROWSE/BROWSE_OK--> s2
+  s2 --CREATE_SUB/SUB_EXISTS--> s2
+  s2 --DELETE_SUB/DELETE_SUB_OK--> s1
