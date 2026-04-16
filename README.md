@@ -48,8 +48,7 @@ The algorithm automatically found a **3-state model** of OPC UA behavior:
 
 ```
 opcua_project/
-├── captures/          → Wireshark PCAP files (9 captures)
-├── captures/csv/      → CSV exports from Wireshark
+├── captures/          → Wireshark PCAP files (9 captures), CSV exports from Wireshark
 ├── scripts/
 │   ├── analyse_all_scenarios.py   → counts all message types
 │   ├── harness.py                 → tests the robot client
