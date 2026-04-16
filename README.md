@@ -1,7 +1,7 @@
 # Protocol Inference and State Machine Learning of OPC UA
 
 > **Peer Project (10CP) — Hochschule Emden/Leer**  
-> Research Group Digital Factory | BMFTR-Project: Secure IoT Gateway  
+> Research Group Digital Factory | BMFTR Project: Secure IoT Gateway  
 > Supervisor: Heiko Schoon, MEng | Prof. Dr. Patrick Felke
 
 ---
@@ -58,7 +58,7 @@ The pipeline has 5 stages:
 
 ## Final Result — Learned State Machine
 
-The L\* algorithm automatically discovered a **3-state Mealy machine** in a single learning round:
+The L\* algorithm automatically discovered a **3 state Mealy machine** in a single learning round:
 
 ```
                     CONNECT/CONNECT_OK
@@ -113,7 +113,7 @@ The L\* algorithm automatically discovered a **3-state Mealy machine** in a sing
 
 ### Key Finding
 
-The algorithm automatically discovered that **subscription management introduces a distinct behavioral state** in the OPC UA server — the server correctly prevents duplicate subscriptions (SUB_EXISTS) and handles deletion of non-existent subscriptions (NO_SUB). This was discovered without any manual protocol analysis.
+The algorithm automatically discovered that **subscription management introduces a distinct behavioral state** in the OPC UA server the server correctly prevents duplicate subscriptions (SUB_EXISTS) and handles deletion of non existent subscriptions (NO_SUB). This was discovered without any manual protocol analysis.
 
 ---
 
@@ -404,7 +404,7 @@ dot -Tpng results/final_complete_state_machine.dot -o results/final_state_machin
 
 ## Security Analysis
 
-The learned 3-state model serves as a **formal security policy**. Any OPC UA server behavior deviating from the learned transitions is an anomaly.
+The learned 3 state model serves as a **formal security policy**. Any OPC UA server behavior deviating from the learned transitions is an anomaly.
 
 Five attack scenarios were simulated and detected:
 
@@ -412,7 +412,7 @@ Five attack scenarios were simulated and detected:
 An attacker connects and browses the entire address space to map all available nodes and data values. Detected by: pure BROWSE-only sessions with no prior READ or WRITE are flagged as reconnaissance pattern.
 
 ### Attack 2 — Session Flooding (DoS)
-Attacker opens multiple sessions rapidly to exhaust server resources. Detected by: multiple rapid CONNECT sequences from the same source deviating from single-session normal pattern.
+Attacker opens multiple sessions rapidly to exhaust server resources. Detected by: multiple rapid CONNECT sequences from the same source deviating from single session normal pattern.
 
 ### Attack 3 — Replay Attack
 Attacker captures a valid session and attempts to replay messages after disconnect. Detected by: READ after DISCONNECT should return NOT_CONNECTED per state machine. Any READ_OK response indicates session not properly invalidated.
@@ -483,7 +483,7 @@ This project builds on and compares with the following key works:
 
 ### Our unique contribution
 
-> First openly reproducible pipeline combining passive PCAP-based message inference with active L\* automata learning for OPC UA, using only open-source tools, requiring no source code access, and producing a formally complete Mealy machine model from real network traffic.
+> First openly reproducible pipeline combining passive PCAP based message inference with active L\* automata learning for OPC UA, using only open source tools, requiring no source code access, and producing a formally complete Mealy machine model from real network traffic.
 
 ---
 
@@ -570,9 +570,9 @@ The full project report is available as `report.docx` in the repository root.
 4. Message Inference
 5. Protocol Harness
 6. Automata Learning
-7. Results — Learned State Machine
+7. Results: Learned State Machine
 8. Security Analysis
-9. Multi-Server Validation
+9. Multi Server Validation
 10. Related Work
 11. Conclusion
 
