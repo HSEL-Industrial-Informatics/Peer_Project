@@ -3,10 +3,11 @@
 A university research project that automatically learns how the OPC UA industrial protocol behaves, using network traffic and machine learning.
 
 **University:** Hochschule Emden/Leer  
-**Supervisor:** Heiko Schoon Prof.                         Dr. Patrick Felke
-                Research Group Digital Factory             IT-Security
-                BMFTR-Project: Secure IoT Gateway          BMFTR-Project: Secure IoT Gateway
-                Email: heiko.schoon@hs-emden-leer.de
+**Supervisor:**< br / >
+Heiko Schoon Prof.                         Dr. Patrick Felke < br / >
+Research Group Digital Factory             IT-Security < br / >
+BMFTR-Project: Secure IoT Gateway          BMFTR-Project: Secure IoT Gateway < br / >
+Email: heiko.schoon@hs-emden-leer.de
 
 ---
 
