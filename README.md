@@ -23,7 +23,7 @@ OPC UA is a protocol used in factories and industrial machines to communicate. T
 
 The algorithm automatically found a **3-state model** of OPC UA behavior:
 
-![State Machine](results/final_state_machine.png)
+![State Machine](graphviz(2).png)
 
 - **s0 — Disconnected:** Nothing works here. Only CONNECT moves you forward.
 - **s1 — Connected:** READ, WRITE, BROWSE all work. CREATE_SUB moves to s2.
@@ -168,5 +168,9 @@ Install with Npcap loopback adapter enabled
 
 ## Contact
 
-Heiko Schoon — heiko.schoon@hs-emden-leer.de  
+Altaf Ahmad — altaf.ahmad@hs-emden-leer.de  
+Raja Jawad Ali - 
 Hochschule Emden/Leer, Research Group Digital Factory
+
+
+
