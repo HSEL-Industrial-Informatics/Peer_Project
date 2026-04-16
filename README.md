@@ -126,7 +126,7 @@ The learned state machine was used to detect 5 attack types:
 1. **Reconnaissance** — attacker browses all nodes to map the server
 2. **Session Flooding** — attacker opens many sessions to crash the server
 3. **Replay Attack** — attacker reuses old session tokens
-4. **Unauthorized Write** — attacker tries to change read-only values
+4. **Unauthorized Write** — attacker tries to change read only values
 5. **Out-of-Order Messages** — attacker sends messages in wrong sequence
 
 Any response that does not match the learned state machine is flagged as an anomaly.
@@ -168,7 +168,7 @@ Install with Npcap loopback adapter enabled
 ## Contact
 
 Altaf Ahmad - altaf.ahmad@hs-emden-leer.de  
-Raja Jawad Ali - altaf.ahmad@hs-emden-leer.de 
+Raja Jawad Ali - raja.jawad.ali@stud.hs-emden-leer.de
 
 Hochschule Emden/Leer, Research Group Digital Factory
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/HS_EmdenLeer_Logo.svg/960px-HS_EmdenLeer_Logo.svg.png" alt="Alt Text" width="250" height="100">
