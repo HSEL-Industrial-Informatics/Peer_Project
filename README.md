@@ -170,6 +170,6 @@ Install with Npcap loopback adapter enabled
 Altaf Ahmad - altaf.ahmad@hs-emden-leer.de  
 Raja Jawad Ali - altaf.ahmad@hs-emden-leer.de 
 
-![Hochschule Emden/Leer, Research Group Digital Factory](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/HS_EmdenLeer_Logo.svg/960px-HS_EmdenLeer_Logo.svg.png)
+![Hochschule Emden/Leer, Research Group Digital Factory]<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/HS_EmdenLeer_Logo.svg/960px-HS_EmdenLeer_Logo.svg.png" alt="Alt Text" width="300" height="200">()
 
 
