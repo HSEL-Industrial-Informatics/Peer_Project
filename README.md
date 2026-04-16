@@ -23,7 +23,7 @@ OPC UA is a protocol used in factories and industrial machines to communicate. T
 
 The algorithm automatically found a **3-state model** of OPC UA behavior:
 
-![State Machine](graphviz(2).png)
+![State Machine](https://github.com/HSEL-Industrial-Informatics/Peer_Project/blob/main/graphviz%20(2).png)
 
 - **s0 — Disconnected:** Nothing works here. Only CONNECT moves you forward.
 - **s1 — Connected:** READ, WRITE, BROWSE all work. CREATE_SUB moves to s2.
